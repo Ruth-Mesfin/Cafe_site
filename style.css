@@ -1,0 +1,208 @@
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+ /*Navigation bar*/
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color:  #FFE4E1; 
+  padding: 10px;
+  text-align: center;
+}    
+.big-box {
+  max-width: 1000px;             /* controls width of the box */
+  margin: 40px auto;             /* centers the box on the page */
+  background-color: #FFF0F5;     /* very light pink background */
+  padding: 40px;                 /* space inside the box */
+  border-radius: 12px;           /* rounded corners */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* subtle shadow */
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+   background-color: #FFE4E1
+
+; 
+}
+nav a {
+  text-decoration: none;   /* removes the default underline */
+  color: #333;             /* dark gray text */
+  font-weight: bold;       /* makes links stand out */
+  margin: 0 15px;          /* spacing between links */
+}
+
+
+nav a:hover {
+  color: #000; /* black on hover */
+}
+
+/* Sections */
+section {
+  min-height: 100vh; /* full screen height */
+  padding: 80px 20px; /* space for fixed nav */
+}
+
+#menu {
+  background-color: #FFF0F5; /* light pink */
+}
+
+#gallery {
+  background-color: #4b3a3a; /* white */
+  color:#FFF0F5;
+text-align: center;
+}
+
+#reviews {
+  background-color: #F4C2C2; /* blush pink */
+}
+
+
+#welcome {
+  background-color: #FFF0F5; /* very light pink */
+  padding: 60px 20px;
+}
+
+.welcome-container {
+  display: flex;              /* side-by-side layout */
+  align-items: center;        /* vertically align text & image */
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;             /* center the container */
+}
+
+.welcome-text {
+  flex: 1;                    /* text takes half space */
+  padding-right: 20px;
+}
+
+.welcome-text h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.welcome-text p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  font-family: 'Great Vibes', cursive;
+}
+
+.welcome-image {
+  flex: 1;                    /* image takes half space */
+  text-align: center;
+  width: 300px;   /* set exact width */
+  height: auto;   /* keeps proportions */
+}
+
+.welcome-image img {
+  max-width: 100%;            /* responsive image */
+  border-radius: 12px;        /* rounded corners */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 400px;   /* set exact width */
+  height: auto;
+}
+.box-container {
+  display: flex;
+  flex-wrap: wrap;          /* allows multiple rows */
+  justify-content: center;  /* center boxes */
+  gap: 35px;                /* space between boxes */
+  padding: 40px;
+}
+
+.box {
+  background-color: #FFF0F5; /* very light pink */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 10px;
+  width: 200px;             /* size of each box */
+  text-align: center;
+}
+
+.box img {
+  max-width: 100%;          /* image fits inside box */
+  border-radius: 8px;
+}
+#reviews {
+  background-color: #F4C2C2; /* blush pink background for section */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.review-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;          /* space between boxes */
+  flex-wrap: wrap;    /* allows wrapping on smaller screens */
+  margin-top: 30px;
+}
+
+.review-box {
+  background-color: #FFF0F5; /* very light pink box */
+   border-radius: 0px 50px 0px 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 600px;
+  height: 100px;
+  text-align: center;
+}
+
+.review-box p {
+  font-family: 'Great Vibes', cursive; /* very cursive font */
+  font-size: 1.2rem;
+  color: #333;
+}
+.signature {
+  font-family: 'Great Vibes', cursive; /* choose any font */
+  color: #e75480;                      /* pink shade */
+  font-size: 1.2rem;                   /* slightly larger */
+  font-style: italic;                  /* optional */
+}
+
+
+#contact {
+  background-color: #683a3a; /* dark contrast */
+  color: #FFFFFF; /* white text for readability */
+}
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* allows stacking on smaller screens */
+}
+
+.contact-text {
+  flex: 1;
+  max-width: 500px;
+  background:#683a3a;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(235, 171, 171, 0.1);
+}
+
+.contact-text h2 {
+  font-family: 'Playfair Display', serif; /* dramatic font */
+  color: #fddce6; /* bold pink */
+  margin-bottom: 20px;
+}
+
+.contact-text p {
+  font-size: 1rem;
+  color: #fcd8e9;
+  line-height: 1.6;
+}
+
+.contact-image {
+  flex: 1;
+  max-width: 400px;
+}
+
+.contact-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
